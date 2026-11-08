@@ -13,5 +13,5 @@ void app_main(void)
     rotary_init();
     home(info.cpu, info.ram, info.gpu);
     wifi_init();
-    xTaskCreate(rotary_task, "rotary_task", 4096, NULL, 5, NULL);
+    xTaskCreate(rotary_task, "rotary_task", 4096, NULL, 6, NULL);
 }

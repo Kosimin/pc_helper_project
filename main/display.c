@@ -1,6 +1,6 @@
 #include "display.h"
 #include "oled.h"
-
+#include "volume.h"
 
 all_info_t info = {
     .process = {
@@ -159,7 +159,7 @@ void show_selected_page(void)
             break;
 
         case PAGE_VOLUME:
-            volume_page(65);
+            volume_page(get_volume());
             break;
 
         case PAGE_MEDIA:

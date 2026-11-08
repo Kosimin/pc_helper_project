@@ -6,6 +6,8 @@ idf_component_register(
         "rotary.c"
         "wifi.c"
         "http.c"
+        "volume.c"
+        "command.c"
 
     INCLUDE_DIRS "."
 
